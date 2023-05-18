@@ -3,6 +3,7 @@ import SpotmusicFiles.Musica;
 import SpotmusicFiles.Podcast;
 import SpotmusicFiles.calculos.CalculadoraDeTempo;
 import SpotmusicFiles.calculos.Classificavel;
+import SpotmusicFiles.calculos.Filtro;
 
 public class Main {
     public static void main(String[] args) {
@@ -47,5 +48,9 @@ public class Main {
         meuPodcast.setDuracaoEmMinutos(36);
 
         meuPodcast.exibeDados();
+
+        Filtro filtro = new Filtro();
+        filtro.filtra(minhaMusica);
+        filtro.filtra(outraMusica);
     }
 }
