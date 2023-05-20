@@ -1,56 +1,42 @@
-import SpotmusicFiles.Titulo;
 import SpotmusicFiles.Musica;
 import SpotmusicFiles.Podcast;
-import SpotmusicFiles.calculos.CalculadoraDeTempo;
-import SpotmusicFiles.calculos.Classificavel;
-import SpotmusicFiles.calculos.Filtro;
+import SpotmusicFiles.calculos.estrelinhas;
 
 public class Main {
     public static void main(String[] args) {
+        estrelinhas minhasEstrelinhas = new estrelinhas();
         Musica minhaMusica = new Musica();
-        minhaMusica.setNome("Obstacle 1");
+        minhaMusica.setTitulo("Obstacle 1");
         minhaMusica.setArtista("Interpol");
-        minhaMusica.setAlbum("Turn On The Bright Lights");
-        minhaMusica.setAnoDeLancamento(2002);
-        minhaMusica.setCurtida(true);
-        minhaMusica.setDuracaoEmMinutos(4);
+        minhaMusica.setGenero("Alternativo/Indie");
+        minhaMusica.setLancamento(2002);
 
-        minhaMusica.exibeDados();
+        for (int i = 0; i < 2043; i++) {
+            minhaMusica.reproduz();
+        }
 
-        minhaMusica.avaliacao(8.3);
-        minhaMusica.avaliacao(10);
-        minhaMusica.avaliacao(9.5);
-        minhaMusica.avaliacao(7);
-        System.out.println("Média de avaliações (" + minhaMusica.getTotalDeAvaliacoes() + "): " + minhaMusica.media());
-
-
-        Musica outraMusica = new Musica();
-        outraMusica.setNome("Welcome to the Machine");
-        outraMusica.setArtista("Pink Floyd");
-        outraMusica.setAlbum("Wish You Were Here");
-        outraMusica.setAnoDeLancamento(1975);
-        outraMusica.setCurtida(true);
-        outraMusica.setDuracaoEmMinutos(8);
-
-        outraMusica.exibeDados();
-
-        outraMusica.avaliacao(10);
-        outraMusica.avaliacao(10);
-        outraMusica.avaliacao(9.5);
-        outraMusica.avaliacao(9.8);
-        System.out.println("Média de avaliações (" + outraMusica.getTotalDeAvaliacoes() + "): " + outraMusica.media());
+        for (int i = 0; i < 2004; i++) {
+            minhaMusica.curte();
+        }
 
         Podcast meuPodcast = new Podcast();
-        meuPodcast.setNome("Choque de Cultura - Ambiente de Música");
+        meuPodcast.setTitulo("Choque de Cultura");
         meuPodcast.setAutor("Canal Brasil");
-        meuPodcast.setAnoDeLancamento(2023);
-        meuPodcast.setCurtida(false);
-        meuPodcast.setDuracaoEmMinutos(36);
+        meuPodcast.setGenero("Humor");
+        meuPodcast.setLancamento(2023);
 
-        meuPodcast.exibeDados();
+        for (int i = 0; i < 4000; i++) {
+            meuPodcast.reproduz();
+        }
 
-        Filtro filtro = new Filtro();
-        filtro.filtra(minhaMusica);
-        filtro.filtra(outraMusica);
+        for (int i = 0; i < 3215; i++) {
+            meuPodcast.curte();
+        }
+
+        minhaMusica.exibeFichaTecnica();
+        estrelinhas.inclui(minhaMusica);
+
+        meuPodcast.exibeFichaTecnicaPodcast();
+        estrelinhas.inclui(meuPodcast);
     }
 }

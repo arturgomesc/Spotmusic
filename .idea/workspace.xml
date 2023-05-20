@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="672cbd26-870a-42cb-8f99-1a38e6bdedc6" name="Changes" comment="adicionando titulo, musica e podcast">
-      <change afterPath="$PROJECT_DIR$/src/SpotmusicFiles/calculos/Filtro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SpotmusicFiles/calculos/estrelinhas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpotmusicFiles/Musica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpotmusicFiles/Musica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpotmusicFiles/Podcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpotmusicFiles/Podcast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpotmusicFiles/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpotmusicFiles/Titulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpotmusicFiles/calculos/CalculadoraDeTempo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpotmusicFiles/calculos/Classificavel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpotmusicFiles/calculos/Filtro.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
